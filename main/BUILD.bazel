@@ -1,0 +1,6 @@
+genrule(
+  name = "it",
+  srcs = ["@ext//:file.txt"],
+  outs = ["it.txt"],
+  cmd = "cp $< $@",
+)
