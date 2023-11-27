@@ -1,0 +1,13 @@
+sh_test(
+    name = "test_noenable_bzlmod",
+    srcs = ["test.sh"],
+    args = ["--noenable_bzlmod"],
+    data = ["main"]
+)
+
+sh_test(
+    name = "test_enable_bzlmod",
+    srcs = ["test.sh"],
+    args = ["--enable_bzlmod"],
+    data = ["main"]
+)
